@@ -1,0 +1,44 @@
+.error {
+  color: red;
+}
+
+/* individual book entry container */
+.book{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto 20px;
+	padding: 15px 30px;
+	text-align: center;
+	background: #ccc;
+	border: 1px solid #777;
+	border-radius: 8px;
+}
+
+/* book image */
+.book img{
+	display: inline-block;
+	margin-right: 20px;
+	border: 1px solid #000;
+}
+
+/* anchor for book title */
+.book h2 a{
+	color: #000;
+}
+
+/* media queries for large screens */
+@media screen and (min-width: 1024px){
+	.book{
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: auto;
+		max-width: none;
+		text-align: left;
+		/*margin: 0 0 20px;*/
+	}
+}
